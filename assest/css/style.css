@@ -1,0 +1,779 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+/*Global*/
+.container{
+    margin:  5%;
+}
+ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button a {
+    color: white;
+}
+/*Header*/
+nav , ul , .link-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    height: 10vh;
+    padding: 2% 5% 0%;
+}
+.link-login{
+    width: 65%;
+}
+nav ul{
+    width: 50%;
+}
+.links a {
+    color: black;
+}
+nav .login , .left-facilities button , .about-details button{
+    background-color: #24AB70;
+    color: white;
+    border-radius: 35px;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+}
+nav button:hover a , .links a:hover ,.left-facilities button:hover a , .about-details button:hover a , footer a:hover{
+    color: #24AB70;
+}
+nav .login:hover ,.left-facilities button:hover , .about-details button:hover{
+    background-color: #24ab7129;
+}
+nav .toggle{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+/*Start Hero*/
+
+/*left side*/
+.hero{
+    display: flex;
+    height: 100vh;
+    margin-top: 2%;
+}
+.hero-left-side{
+    background-color: #24AB700A;
+    width: 50%;
+    border-radius: 50px 0px 0px 0px;
+}
+.hero-left-side .content{
+    padding: 10%;
+}
+.hero-left-side .content h1{
+    font-size: 54px ;
+    font-weight: 600;
+}
+.hero-left-side .content p{
+    padding: 30px 0px;
+    width: 80%;
+    line-height: 32px;
+    color: #555555;
+    font-weight: 400;
+}
+.video a {
+    padding-left: 15px;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 33%;
+}
+.iqon-video{
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+}
+.iqon-video:hover{
+    background-color: #24AB70;
+}
+.iqon-video path{
+    color: #24AB70;
+}
+.iqon-video:hover path{
+    color: white;
+}
+/*Right Side*/
+.hero-right-side{
+    background-image: url(../img/image.png);
+    width: 50%;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 0px 55px 0px 0px;
+}
+/*Form*/
+.hero-form{
+    position: absolute;
+    right: 15%;
+    bottom: 0%;
+    width: 70%;
+    background-color: #FFFFFF;
+    border-radius: 280px;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form .input-div {
+    margin: 5px 0px;
+    border-right: 1px solid gray;
+    padding: 0px 20px;
+}
+.input-div input{
+    margin-left: 18%;
+}
+.label-img{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.label-img label{
+    margin-left: 5px;
+}
+.label-img img {
+    width: 24px;
+}
+.hero-form input , .search-div button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.search-div{
+    background-color: #24AB70;
+    border-radius: 280px;
+    height: 85px;
+    display: flex;
+    padding: 20px;
+}
+.search-div span {
+    color: white;
+}
+.search-div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+/*  Section Card*/
+.card-hotel h1 , .facilities h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+.card-hotel .view-all p , .facilities p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+    width: 33%;
+}
+.view-all{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 0%;
+}
+.view-all button {
+    background-color: #24AB701A;
+    border: none;
+    border-radius: 280px;
+    cursor: pointer;
+    padding: 1% 3%;
+}
+.view-all button a {
+    color: #24AB70;
+}
+.view-all button:hover{
+    background-color: #24AB70;
+}
+.view-all button:hover a {
+    color: white;
+}
+.container-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-hotel .card{
+    width: 32%;
+    background-color: #FAFAFA;
+    border-radius: 16px;
+}
+.container-card .card .img-hotel {
+    width: 100%;
+}
+.details{
+    padding: 8% 5%;
+}
+.details .address{
+    color: #24AB70;
+    font-size: 12px;
+    font-weight: 400;
+}
+.details h3{
+    font-weight: 600;
+    font-size: 24px;
+    padding: 3% 0%;
+}
+.price{
+    display: flex;
+    align-items: center ;
+}
+.price img {
+    width: 15px;
+}
+.price div {
+    padding-left: 2%;
+}
+.price .rate {
+    font-size: 16px;
+    padding-bottom: 1%;
+}
+.night-price{
+    border-right: 1px solid #DDDDDD;
+    padding-right: 2%;
+}
+
+/*Facilities Section*/
+.facilities , .discover{
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+}
+.facilities h1{
+    width: 90%;
+}
+.left-facilities{
+    width: 35%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-facilities p {
+    width:80%;
+}
+.left-facilities button{
+    width: fit-content;
+}
+.right-facilities{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.right-facilities .card-facilities {   
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    height: 49%;
+}
+.card-facilities:hover{
+    box-shadow: 0px 0px 10px #E8E8E8;
+    transition: all 0.2s;
+    padding: 2px;
+}
+.card-facilities img {
+    width: 40px;
+    height: 40px;
+}
+.card-facilities p {
+    font-weight: 400;
+    font-size: 12px;
+    width: fit-content;
+    padding: 0px;
+}
+
+/*Discover Section*/
+.discover{
+    height: 75vh;
+    border-radius: 16px;
+}
+.discover img {
+    width: 40%;
+}
+.discover .about-details {
+    background-color: #24AB701A;
+    display: flex;
+    width: 60%;
+    padding: 5% 10% ;
+    border-radius: 0px 16px 16px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-details h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.about-details p  , .testimonial div p{
+    color: #555555;
+    font-weight: 400;
+}
+.about-details button{
+    width: fit-content;
+    color: white;
+    cursor: pointer ;
+}
+
+/*Testimonial*/
+.testimonial{
+    display: flex;
+    position: relative;
+    height: 70vh;
+    background-color: #FAFAFA;
+
+}
+.testimonial .left-testimonial {
+    width: 60%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px 0px 0px 16px;
+}
+.detail-person p{
+    padding-top: 1.5%;
+}
+.testimonial .img-person {
+    width: 40%;
+}
+.testimonial img {
+    width: 24px;
+}
+.testimonial h3 {
+    font-weight: 600;
+}
+.arrow-left  , .arrow-right{
+    position: absolute;
+    top: 50%;
+    color: #24AB70;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    padding: 7px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+.arrow-left:hover ,.arrow-right:hover{
+    background-color: #24AB70;
+    color: white;
+}
+.arrow-left{
+    left: -1%;
+    
+}
+.arrow-right{
+    right: -1%;
+}
+/*Other Company*/
+
+.other-company{
+    margin: 5% 15% ;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Map*/
+
+.map{
+    position: relative;
+}
+.contact-details{
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    bottom: 5%;
+    border-radius: 16px;
+    left: 10%;
+    z-index: 1;
+    padding: 3% 4%;
+    display: flex;
+}
+.contact-details .left-contact{
+    width: 45%;
+}
+.contact-details .left-contact h3 {
+    font-weight: 600;
+    font-size: 36px;
+}
+.contact-details .left-contact p {
+    padding: 3% 0%;
+}
+.contact-details .right-contact{
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-contact input{
+    background-color: #FAFAFA;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+    outline: none;
+    padding: 3%;
+}
+.right-contact button{
+    color: white;
+    background-color: #24AB70;
+    border-radius: 50px ;
+    border: none;
+    padding: 3% 4%;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    margin: 5% 10%;
+    height: 25vh;
+}
+footer .footer-div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h2{
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+footer .logo{
+    width: 90px;
+    align-self: flex-start;
+}
+footer a {
+    cursor: pointer;
+    width: fit-content;
+    padding: 5px 0px;
+}
+footer .icon {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-self: flex-start;
+}
+
+footer p {
+    padding: 20px 0px;
+    width: 100%;
+}
+footer .icon img {
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        margin: 5%;
+    }
+    nav .link-login{
+        position: absolute;
+        left: 0;
+        top: 70px;
+        transform: translateX(-100%);
+        transition: all .5s;
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0% 5%;
+    }
+    nav .link-login.active{
+        transform: translateX(0);
+    }
+    nav .link-login .links{
+        flex-direction: column;
+        height: 40vh;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    nav .link-login .login{
+        border-radius: 0;
+        padding: 8px 25px;
+        margin-top: 10px;
+        background-color: #24ab7129;
+    }
+    .login a {
+        color: #24AB70;
+    }
+    nav .toggle{
+        display: block;
+    }
+    /*Hero*/
+    .hero-left-side{
+        width: 100%;
+    }
+    .hero-left-side .content{
+        padding: 4% 5%;
+    }
+    .hero-left-side .content h1 {
+        font-size: 26px;
+    }
+    .hero-left-side .content p {
+        padding: 10px 0px ;
+        width: 100%;
+    }
+    .hero-right-side{
+        display: none;
+    }
+    form{
+        display: block;
+    }
+    .label-img{
+        padding: 1%;
+        width: 100%;
+    }
+    .hero-form {
+        border-radius: 0px;
+        bottom: 0%;
+        right: 7%;
+        width: 85%;
+        box-shadow: 0px 0px 10px 5px #eee   ;
+    }
+    form .input-div{
+        padding: 0px;
+        border: none;
+        border-bottom: 1px solid gray;
+        padding: 5px;
+        margin: 1px 0px;
+    }
+    form{
+        padding-top: 10px;
+        margin: 0px 15px;
+    }
+    .input-div input{
+        margin-left: 30px;
+    }
+    .search-div {
+        width: 60px;
+        height: auto;
+        border-radius: 120px;
+        position: relative;
+        left: 40%;
+    }
+    .search-div img {
+        width: 18px;
+    }
+    .search-div button{
+        width: 100%;
+    }
+    .search-div span{
+        display: none;
+    }
+    /*Card*/
+    .view-all{
+        flex-wrap: wrap;
+        padding: 4% 0%;
+    }
+    .view-all button{
+        padding: 1.5% 6%;
+    }
+    .card-hotel h1 {
+        font-size: 30px;
+    }
+    .card-hotel .view-all p {
+        width: 100%;
+        padding: 3% 0%;
+    }
+    .details h3 {
+        font-size: 13px;
+        padding: 7% 0%;
+    }
+    .price{
+        flex-wrap: wrap;
+    }
+    .price .night-price{
+        border: none;
+    }
+    /*Facilities*/
+    .facilities ,.discover{
+        flex-wrap:wrap ;
+        height: 100vh;
+    }
+    .facilities .right-facilities{
+        width: 100%;
+        height: 55%;
+    }
+    .facilities .left-facilities , .details .about-details{
+        width: 100%;
+        height: 43%;
+    }
+    /*Discover*/
+    .discover {
+        height: 155vh;
+    }
+    .discover img {
+        width: 100%;
+    }
+    .discover .about-details{
+        width: 100%;
+        border-radius: 16px;
+    }
+    /*Testimonial*/
+    .testimonial{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100vh;
+    }
+    .testimonial .img-person{
+        order: -1;
+        width: 50%;
+    } 
+    .testimonial .left-testimonial{
+        width: 100%;
+        text-align: center;
+    }
+    .arrow-left{
+        left: -2%;
+        padding: 10px;
+    }
+    .arrow-right{
+        right: -2%;
+        padding:10px ;
+    }
+    /*Other Company*/
+    .other-company{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .other-company img {
+        width: 35%;
+    }
+    /*Map*/
+    .contact-details{
+        left: 1%;
+        width: 98%;
+        flex-wrap: wrap;
+    }
+    .contact-details .left-contact{
+        width: 100%;
+    }
+    .left-contact p{
+        padding: 2% 0%;
+    }
+    .contact-details .right-contact{
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;;
+    }
+    .right-contact button , .right-contact input{
+        width: 50%;
+        border-radius: 0px;
+        padding: 2%;
+    }
+    /*Foooter*/
+    footer {
+        height: 50vh;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    footer .footer-div {
+        width: 33%;
+        align-items: center;
+    }
+    .footer-div .logo , .icon {
+        align-self: flex-start;
+    }
+}
+@media screen and (max-width : 400px){
+    .facilities h1 , .discover h1 , .card-hotel h1{
+        width: 100%;
+        font-size: 28px;
+    }
+    .facilities .left-facilities p{
+        width: 100%;
+    }
+    .hero-form{
+        bottom: -7%;
+    }
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .container-card .card{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .facilities{
+        height: 120vh;
+    }
+    .facilities .left-facilities{
+        height: 35%;
+    }
+    
+    .facilities .right-facilities{
+        margin: 4% 8%;
+        height: 60% ;
+        gap: 1%;
+    }
+    .right-facilities .card-facilities{
+        width: 48%;
+        height: 25%;
+    }
+    .testimonial{
+        height: 120vh;
+    }
+    .testimonial .img-person{
+        width: 100%;
+    }
+    .arrow-left , .arrow-right{
+        top: 20%;
+    }
+
+    .discover{
+        height: 125vh;
+    }
+    .contact-details{
+        height: 70%;
+        width: 92%;
+        left: 4%;
+    }
+    .contact-details .left-contact h3{
+        font-size: 28px;
+    }
+    .contact-details .right-contact{
+        flex-wrap: wrap;
+    }
+    .right-contact input , .right-contact button{
+        width: 95%;
+        height: 50%;
+    }
+    footer{
+        height: 80vh;
+    }
+    footer .footer-div{
+    align-items: flex-start;
+        width: 50%;
+    }
+    footer .media-400{
+        width: 100%;
+    }
+}
